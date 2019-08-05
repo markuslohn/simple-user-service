@@ -29,7 +29,6 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import javax.transaction.Transactional;
 import org.slf4j.Logger;
 
 /**
@@ -64,17 +63,14 @@ public class UserManager {
         return query.getResultList();
     }
 
-    @Transactional(Transactional.TxType.REQUIRED)
     public void addNewUsers(List<User> newUsers) {
         newUsers.forEach(newUser -> em.persist(newUser));
     }
 
-    @Transactional(Transactional.TxType.REQUIRED)
     public void updateUser(User user) {
         em.merge(user);
     }
 
-    @Transactional(Transactional.TxType.REQUIRED)
     public void deleteUser(Long id) {
         User user = em.find(User.class, id);
         if (user != null) {
@@ -82,7 +78,6 @@ public class UserManager {
         }
     }
 
-    @Transactional(Transactional.TxType.REQUIRED)
     public void deleteAll() {
         log.info("Delete all records from user table...");
         Query query = em.createNativeQuery("DELETE FROM User");

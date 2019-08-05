@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-workspace name="simpleuserservice-workspace" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
-  <con:project name="simple-user-service">/Users/mlohn/Sourcecode/tech11/easy-user-service/simple-user-service/soapui/simple-user-service-soapui-project.xml</con:project>
+  <con:project name="simple-user-service">/Users/mlohn/Sourcecode/tech11/simple-user-service/soapui/simple-user-service-soapui-project.xml</con:project>
   <con:collectInfoForSupport>false</con:collectInfoForSupport>
 </con:soapui-workspace>

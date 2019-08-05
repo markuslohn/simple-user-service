@@ -46,7 +46,7 @@ import org.slf4j.Logger;
  *
  * @author mlohn
  */
-@Path("/api/users")
+@Path("/users")
 @ApplicationScoped
 public class UserResource {
 

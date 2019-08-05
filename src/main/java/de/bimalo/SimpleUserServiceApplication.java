@@ -31,7 +31,7 @@ import javax.ws.rs.core.Application;
  * 
  * @author mlohn
  */
-@ApplicationPath("")
+@ApplicationPath("/api")
 public class SimpleUserServiceApplication extends Application {
     
 }
